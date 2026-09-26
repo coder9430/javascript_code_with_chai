@@ -1,0 +1,53 @@
+JAVASCRIPT EXECUTION CONTEXT
+
+1.{}=> GLOBAL EXECTUION CONTEXT
+2.FUNCTION EXECUTION CONTEXT
+---> memory creation phase
+---> execution creation phase
+
+javascript is a single threaded language.
+
+// let take a peice of code and see how it execute
+let val1=10;
+let val2=5;
+function addNum(num1,num2)
+{
+    let total=num1+num2;
+    return total;
+}
+let result1=addNum(val1,val2);
+let result2=addNum(2,3);
+
+step 1. GLOBAL  EXECUTION
+     2.MEMORY PHASE 
+        val1->undefined
+        val2->undefined
+        addnum->defination
+        result1->undefined
+        result1->undefined
+     3.EXECUTION PHASE
+        val1<-10
+        val2<-5
+        addNum->new execution context (a new sand box will be created)->(new variable environment+ execution thread)
+        1. memory phase val1->undefined
+                        val2->undefined
+                        total->undefined
+        2.execution phase num1->10
+                          num2->5
+                          total->15(will return to global exection context) 
+                          result=15               
+        3.delete                      
+        same will be done for result2 a new send box will be created (new variable environment+execution thread)
+
+EXECUTION STACK
+
+
+    |           |
+    |           |
+    |           |
+    |           |
+    |           |
+    | ONE()     |
+    | GLOBALEXEC|
+    -------------
+// u can check if using browser in source tab

@@ -19,4 +19,7 @@ let val1;
 // val1=5??10
 // val1=null??10
 var1=undefined??15
-va
+// terniary operator
+// condition?true:false
+const iceTeaPrice=100
+iceTeaPrice>=80?console.log("ice tea is expensive"):console.log("ice tea is cheap");

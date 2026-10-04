@@ -1,0 +1,5 @@
+Javascript is a synchronous programming language
+a single threaded language
+
+Blocking code->block the flow of Program eg-Read file Sync
+Non-Blocking code->does not block the flow of Program

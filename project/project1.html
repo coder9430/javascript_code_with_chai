@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project1</title>
+    <style>
+        .buttons
+        {
+            flex-direction: row;
+        }
+        .button{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="buttons">
+        <button id="pink" class="button" style="background-color: pink;">Pink</button>
+        <button id="blue" class="button" style="background-color: skyblue;">Blue</button>
+        <button id="red" class="button" style="background-color: rgb(196, 89, 89);">red</button>
+        <button id="yellow" class="button" style="background-color: rgb(224, 224, 111);">yellow</button>
+    </div>
+</body>
+<script>
+    const button=document.querySelectorAll('.button')
+    const body=document.querySelector("body");
+    button.forEach(function (button)
+    {
+        button.addEventListener('click',function(event)
+        {
+            if(event.target.id=="pink")
+            {
+                body.style.backgroundColor='pink'
+            }
+            else if(event.target.id=="blue")
+            {
+                body.style.backgroundColor='skyblue'
+            }
+            else if(event.target.id=="red")
+            {
+                body.style.backgroundColor='rgb(196, 89, 89)'
+            }
+            else if(event.target.id=="yellow")
+            {
+                body.style.backgroundColor='rgb(224, 224, 111)'
+            }
+        })
+    })
+</script>
+</html>

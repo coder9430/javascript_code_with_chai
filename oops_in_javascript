@@ -1,0 +1,15 @@
+javascript is primarily a prototype language and the classes are primarily syntactic suger over exsisting prototype-base inheritance mechenisms
+OOP
+object
+-collection of properties and methods
+-toLowerCase
+
+parts of OOP object literal
+-constructor function-har bar yek new instance deta he 
+-Prototypes
+-Classes
+-Instances(new,this)
+
+new-1. create a new instance 
+2.using constructor pass the the properties and function of that class
+3.set the value of the properties using this key words
